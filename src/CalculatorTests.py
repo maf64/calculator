@@ -23,6 +23,10 @@ class MyTestCase(unittest.TestCase):
         calculator = Calculator()
         self.assertEqual(calculator.divide(1, 1), 1)
 
+    def test_squaring(self):
+        calculator = Calculator()
+        self.assertEqual(calculator.square(1, 1), 1)
+
     def test_results_property(self):
         calculator = Calculator()
         calculator.add(2, 1)
