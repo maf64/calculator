@@ -1,4 +1,5 @@
 import unittest
+import math
 from Calculator import Calculator
 
 
@@ -26,6 +27,10 @@ class MyTestCase(unittest.TestCase):
     def test_squaring(self):
         calculator = Calculator()
         self.assertEqual(calculator.square(1, 1), 1)
+
+    def test_squarerooting(self):
+        calculator = Calculator()
+        self.assertEqual(calculator.squareroot(1), 1)
 
     def test_results_property(self):
         calculator = Calculator()
