@@ -19,6 +19,10 @@ class MyTestCase(unittest.TestCase):
         calculator = Calculator()
         self.assertEqual(calculator.multiply(1, 1), 1)
 
+    def test_division(self):
+        calculator = Calculator()
+        self.assertEqual(calculator.divide(1, 1), 1)
+
     def test_results_property(self):
         calculator = Calculator()
         calculator.add(2, 1)
